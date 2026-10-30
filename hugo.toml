@@ -1,0 +1,71 @@
+# baseURL is intentionally not set here: the GitHub Actions workflow passes
+# the right value at build time (https://j-sp.github.io/orellut.net/ now,
+# https://orellut.net/ once the custom domain is configured).
+# `hugo server` uses http://localhost:1313/ automatically.
+
+title = 'orellut.net'
+theme = 'PaperMod'
+locale = 'en-us'
+defaultContentLanguage = 'en'
+copyright = '© Javier Serrano'
+enableRobotsTXT = true
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  # JSON is needed by PaperMod's search page.
+  home = ['HTML', 'RSS', 'JSON']
+
+[params]
+  env = 'production'
+  description = 'Personal blog of Javier Serrano'
+  author = 'Javier Serrano'
+  mainSections = ['posts']
+  defaultTheme = 'dark' # readers can still switch with the toggle
+  DateFormat = 'January 2, 2006'
+
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowShareButtons = false
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  TocOpen = false
+
+  [params.homeInfoParams]
+    Title = 'Hi, welcome to orellut.net'
+    Content = 'Notes and articles by Javier Serrano.'
+
+  [[params.socialIcons]]
+    name = 'rss'
+    url = 'index.xml'
+
+[menus]
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 10
+  [[menus.main]]
+    name = 'Archives'
+    pageRef = '/archives'
+    weight = 20
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 30
+  [[menus.main]]
+    name = 'Search'
+    pageRef = '/search'
+    weight = 40
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 50
+
+[markup]
+  [markup.highlight]
+    noClasses = false
