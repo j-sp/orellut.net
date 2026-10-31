@@ -37,8 +37,8 @@ enableEmoji = true
   TocOpen = false
 
   [params.homeInfoParams]
-    Title = 'Hi, welcome to orellut.net'
-    Content = 'Notes and articles by Javier Serrano.'
+    Title = 'Hello, and welcome'
+    Content = 'These are my notes, written in a personal capacity. [More about me](about/).'
 
   [[params.socialIcons]]
     name = 'rss'

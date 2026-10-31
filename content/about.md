@@ -6,6 +6,13 @@ ShowBreadCrumbs = false
 ShowPostNavLinks = false
 +++
 
-Hi, I'm Javier Serrano. This is my personal website.
+I'm an engineer and a physicist working at
+[CERN](https://home.cern), and a member of the
+[European Open Source Academy](https://europeanopensource.academy/).
 
-*(Replace this text with your own introduction.)*
+Husband, father of two. Citizen.
+
+## Disclaimer
+
+The opinions expressed on this website are my own and do not necessarily
+reflect the views of my employer.
